@@ -29,17 +29,12 @@
             <li class="nav-item">
               <!-- Button trigger modal -->
               <button
-                type="button"
+                type="button" id="addPerson"
                 class="btn btn-primary addStud"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
               >
-                Add student
-              </button>
-            </li>
-            <li class="nav-item">
-              <button id="user" class="bestStud btn btn-primary">
-                Show best students
+                Добавить персонажа
               </button>
             </li>
           </ul>
@@ -153,6 +148,13 @@
     <!-- Carusel Finish -->
     <br />
 
+<!-- SECTION BOOKS START -->
+<section
+class="container mt-5 d-flex flex-wrap justify-content-around"
+id="sectionChar"
+></section>
+<!-- SECTION BOOKS FINISH -->
+
     <!-- Modal -->
     <div
       class="modal fade"
@@ -165,7 +167,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">
-              Создание нового персонажа
+             ⭐ Создание нового персонажа ⭐
             </h5>
             <button
               type="button"
@@ -180,15 +182,15 @@
               <input type="text" class="form-control" id="charName" />
             </div>
             <div class="mb-3">
-              <label for="originName" class="form-label">Оригинал имени</label>
+              <label for="originName" class="form-label">Оригинальное именя</label>
               <input type="text" class="form-control" id="originName" />
             </div>
             <div class="mb-3">
-              <label for="dateChar" class="form-label">День рождение</label>
+              <label for="dateChar" class="form-label">День рождения</label>
               <input type="date" class="form-control" id="dateChar" />
             </div>
             <div class="mb-3">
-              <label for="addDesc" class="form-label">Личный ингредиент</label>
+              <label for="addDesc" class="form-label">Описание</label>
               <input type="textarea" class="form-control" id="addDesc" />
             </div>
             <div class="mb-3">

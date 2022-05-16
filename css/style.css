@@ -7,7 +7,7 @@ body {
   border-bottom: 1px solid black;
 }
 .card {
-  background-color: #7cf0bd;
+  background-color: #caa3dc;
 }
 
 footer {
@@ -75,4 +75,9 @@ footer {
 .footer {
   background-color: #dba8dc;
   border-bottom: 1px solid black;
+}
+#addPerson {
+  margin-left: 150%;
+  background-color: #d380e6;
+  border-radius: 30px;
 }

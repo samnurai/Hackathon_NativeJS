@@ -1,5 +1,4 @@
 const API = "http://localhost:8000/cards";
-readChars();
 
 let charName = document.getElementById("charName");
 let originName = document.getElementById("originName");
@@ -10,6 +9,10 @@ let modal = document.getElementsByClassName("modal");
 let btnAdd = document.getElementById("btnAdd");
 let sectionChar = document.getElementById("sectionChar");
 let btn;
+let searchValue = "";
+let currentPage = 1; 
+let countPage = 1;
+readChars();
 
 btnAdd.addEventListener("click", () => {
   if (
@@ -53,7 +56,7 @@ function createChar(char) {
 }
 
 function readChars() {
-  fetch(`${API}`)
+  fetch(`${API}?q=${searchValue}&_page=${currentPage}&_limit=6`)
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -106,7 +109,7 @@ document.addEventListener("click", (event) => {
   let editArr = [...event.target.classList];
   if (editArr.includes("btnEdit")) {
     let id = event.target.id;
-    fetch(`${API}/${id}`)
+    fetch(`${API}?q=${searchValue}&_page=${currentPage}&_limit=6`)
       .then((res) => res.json())
       .then((data) => {
         charNameEdit.value = data.name;
