@@ -70,3 +70,9 @@ footer {
 #searchInputBtn {
   background-color: #e99feb;
 }
+
+
+.footer {
+  background-color: #dba8dc;
+  border-bottom: 1px solid black;
+}
