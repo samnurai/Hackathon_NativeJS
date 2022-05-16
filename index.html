@@ -45,18 +45,18 @@
           </ul>
           <form class="d-flex">
             <input
-              id="searchInput"
               class="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="Поиск..."
               aria-label="Search"
+              id="inpSearch"
             />
             <button
               id="searchInputBtn"
               class="btn btn-outline-success"
               type="submit"
             >
-              Search
+              Поиск🔎
             </button>
           </form>
         </div>
@@ -64,8 +64,7 @@
     </nav>
     <!--  -->
     <!-- NAVBAR FINISH -->
-
-    <br />
+<br>
 
     <!-- Carusel Start -->
 
@@ -250,6 +249,19 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <br>
+    <!-- Pagination Start -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" id="prevBtn" href="#">◀ Предыдущая</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" id="nextBtn" href="#">Следующая ▶</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Pagination Finish -->
 
     <!-- Link JS -->
     <script src="./js/main.js"></script>
