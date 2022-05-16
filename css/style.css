@@ -57,3 +57,16 @@ footer {
   width: 90px;
   height: 30px;
 }
+#prevBtn {
+  border-radius: 25px;
+  background-color: #dba8dc;
+  color: aliceblue;
+}
+#nextBtn {
+  border-radius: 25px;
+  background-color: #dba8dc;
+  color: aliceblue;
+}
+#searchInputBtn {
+  background-color: #e99feb;
+}
